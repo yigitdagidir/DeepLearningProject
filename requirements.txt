@@ -1,0 +1,15 @@
+# Core deep learning stack
+torch>=2.0
+torchvision>=0.15
+
+# Data / numerics
+numpy>=1.24
+pillow>=9.0
+h5py>=3.7            # only needed for the real Fashion-Gen .h5 files
+
+# Evaluation, plotting, tuning
+scikit-learn>=1.2
+matplotlib>=3.6
+
+# (optional) progress bars
+tqdm>=4.64

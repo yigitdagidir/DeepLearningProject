@@ -1,0 +1,7213 @@
+{
+  "classes": [
+    "t_shirt",
+    "dress",
+    "pants",
+    "shoes",
+    "bag",
+    "hat"
+  ],
+  "records": [
+    {
+      "image": "images/train/t_shirt_0000.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0001.png",
+      "caption": "a pink wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0002.png",
+      "caption": "vintage red t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0003.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0004.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0005.png",
+      "caption": "a brown linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0006.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0007.png",
+      "caption": "a yellow wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0008.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0009.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0010.png",
+      "caption": "a black linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0011.png",
+      "caption": "modern black t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0012.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0013.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0014.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0015.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0016.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0017.png",
+      "caption": "a black linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0018.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0019.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0020.png",
+      "caption": "a grey cotton short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0021.png",
+      "caption": "a black wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0022.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0023.png",
+      "caption": "a yellow silk short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0024.png",
+      "caption": "a grey silk short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0025.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0026.png",
+      "caption": "a white polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0027.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0028.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0029.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0030.png",
+      "caption": "a white denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0031.png",
+      "caption": "a grey polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0032.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0033.png",
+      "caption": "a pink linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0034.png",
+      "caption": "modern red t shirt made of wool",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0035.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0036.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0037.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0038.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0039.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0040.png",
+      "caption": "vintage yellow t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0041.png",
+      "caption": "a pink silk short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0042.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0043.png",
+      "caption": "a pink linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0044.png",
+      "caption": "a pink polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0045.png",
+      "caption": "vintage black t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0046.png",
+      "caption": "casual yellow t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0047.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0048.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0049.png",
+      "caption": "classic brown t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0050.png",
+      "caption": "a yellow silk short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0051.png",
+      "caption": "classic blue t shirt made of wool",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0052.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0053.png",
+      "caption": "vintage pink t shirt made of denim",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0054.png",
+      "caption": "casual pink t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0055.png",
+      "caption": "sporty grey t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0056.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0057.png",
+      "caption": "elegant brown t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0058.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0059.png",
+      "caption": "a black polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0060.png",
+      "caption": "sporty blue t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0061.png",
+      "caption": "sporty pink t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0062.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0063.png",
+      "caption": "a grey leather short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0064.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0065.png",
+      "caption": "a pink linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0066.png",
+      "caption": "vintage brown t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0067.png",
+      "caption": "elegant blue t shirt made of leather",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0068.png",
+      "caption": "elegant green t shirt made of leather",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0069.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0070.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0071.png",
+      "caption": "casual green t shirt made of denim",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0072.png",
+      "caption": "a black linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0073.png",
+      "caption": "a yellow denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0074.png",
+      "caption": "sporty white t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0075.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0076.png",
+      "caption": "a green denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0077.png",
+      "caption": "a white silk short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0078.png",
+      "caption": "casual brown t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0079.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0080.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0081.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0082.png",
+      "caption": "elegant brown t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0083.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0084.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0085.png",
+      "caption": "sporty black t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0086.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0087.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0088.png",
+      "caption": "classic red t shirt made of cotton",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0089.png",
+      "caption": "a white denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0090.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0091.png",
+      "caption": "modern pink t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0092.png",
+      "caption": "a green wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0093.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0094.png",
+      "caption": "vintage yellow t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0095.png",
+      "caption": "elegant grey t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0096.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0097.png",
+      "caption": "classic red t shirt made of wool",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0098.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0099.png",
+      "caption": "a pink polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0100.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0101.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0102.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0103.png",
+      "caption": "sporty grey t shirt made of leather",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0104.png",
+      "caption": "a grey polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0105.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0106.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0107.png",
+      "caption": "vintage red t shirt made of wool",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0108.png",
+      "caption": "a black wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0109.png",
+      "caption": "a red polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0110.png",
+      "caption": "modern grey t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0111.png",
+      "caption": "modern black t shirt made of denim",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0112.png",
+      "caption": "a blue linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0113.png",
+      "caption": "vintage red t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0114.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0115.png",
+      "caption": "a brown polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/t_shirt_0116.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0117.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/t_shirt_0118.png",
+      "caption": "a green wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/t_shirt_0119.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0000.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0001.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0002.png",
+      "caption": "an casual blue silk dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0003.png",
+      "caption": "a blue summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0004.png",
+      "caption": "a blue summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0005.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0006.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0007.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0008.png",
+      "caption": "an vintage green denim dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0009.png",
+      "caption": "a brown summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0010.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0011.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0012.png",
+      "caption": "a red summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0013.png",
+      "caption": "an casual pink wool dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0014.png",
+      "caption": "a grey summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0015.png",
+      "caption": "an elegant green polyester dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0016.png",
+      "caption": "a green summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0017.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0018.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0019.png",
+      "caption": "a grey summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0020.png",
+      "caption": "a black summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0021.png",
+      "caption": "a black summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0022.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0023.png",
+      "caption": "a white summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0024.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0025.png",
+      "caption": "a black summer dress in soft polyester",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0026.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0027.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0028.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0029.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0030.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0031.png",
+      "caption": "an vintage brown polyester dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0032.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0033.png",
+      "caption": "an modern yellow wool dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0034.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0035.png",
+      "caption": "an elegant black leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0036.png",
+      "caption": "an casual pink leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0037.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0038.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0039.png",
+      "caption": "a blue summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0040.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0041.png",
+      "caption": "an vintage blue cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0042.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0043.png",
+      "caption": "a yellow summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0044.png",
+      "caption": "an modern black linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0045.png",
+      "caption": "a blue summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0046.png",
+      "caption": "an sporty green cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0047.png",
+      "caption": "an casual black wool dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0048.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0049.png",
+      "caption": "a green summer dress in soft polyester",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0050.png",
+      "caption": "an modern red cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0051.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0052.png",
+      "caption": "a green summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0053.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0054.png",
+      "caption": "an elegant white wool dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0055.png",
+      "caption": "a blue summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0056.png",
+      "caption": "a blue summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0057.png",
+      "caption": "an classic white cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0058.png",
+      "caption": "a white summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0059.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0060.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0061.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0062.png",
+      "caption": "a grey summer dress in soft polyester",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0063.png",
+      "caption": "an sporty brown linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0064.png",
+      "caption": "an modern green linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0065.png",
+      "caption": "an elegant green leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0066.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0067.png",
+      "caption": "an classic white leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0068.png",
+      "caption": "a brown summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0069.png",
+      "caption": "an elegant green cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0070.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0071.png",
+      "caption": "a grey summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0072.png",
+      "caption": "an vintage white cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0073.png",
+      "caption": "a red summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0074.png",
+      "caption": "a brown summer dress in soft denim",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0075.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0076.png",
+      "caption": "an elegant yellow linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0077.png",
+      "caption": "a yellow summer dress in soft polyester",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0078.png",
+      "caption": "a green summer dress in soft silk",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0079.png",
+      "caption": "a green summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0080.png",
+      "caption": "an vintage brown wool dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0081.png",
+      "caption": "an classic black leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0082.png",
+      "caption": "a grey summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0083.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0084.png",
+      "caption": "a pink summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0085.png",
+      "caption": "a grey summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0086.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0087.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0088.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0089.png",
+      "caption": "a pink summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0090.png",
+      "caption": "a blue summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0091.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0092.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0093.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0094.png",
+      "caption": "a yellow summer dress in soft denim",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0095.png",
+      "caption": "an elegant blue linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0096.png",
+      "caption": "a green summer dress in soft denim",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0097.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0098.png",
+      "caption": "a grey summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0099.png",
+      "caption": "an casual blue silk dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0100.png",
+      "caption": "a black summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0101.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0102.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0103.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0104.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0105.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0106.png",
+      "caption": "an casual pink silk dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0107.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0108.png",
+      "caption": "an sporty grey linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0109.png",
+      "caption": "a pink summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0110.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0111.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0112.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/dress_0113.png",
+      "caption": "an classic brown leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0114.png",
+      "caption": "a green summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0115.png",
+      "caption": "a blue summer dress in soft denim",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0116.png",
+      "caption": "an sporty yellow denim dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0117.png",
+      "caption": "an casual pink leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/dress_0118.png",
+      "caption": "an elegant yellow leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/dress_0119.png",
+      "caption": "an modern pink cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0000.png",
+      "caption": "casual white trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0001.png",
+      "caption": "classic yellow trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0002.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0003.png",
+      "caption": "casual pink trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0004.png",
+      "caption": "a pair of pink linen pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0005.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0006.png",
+      "caption": "a pair of brown denim pants with a modern fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0007.png",
+      "caption": "vintage pink trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0008.png",
+      "caption": "a pair of pink wool pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0009.png",
+      "caption": "casual pink trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0010.png",
+      "caption": "vintage grey trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0011.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0012.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0013.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0014.png",
+      "caption": "casual pink trousers made of polyester",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0015.png",
+      "caption": "a pair of yellow wool pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0016.png",
+      "caption": "a pair of grey wool pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0017.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0018.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0019.png",
+      "caption": "a pair of green leather pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0020.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0021.png",
+      "caption": "classic black trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0022.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0023.png",
+      "caption": "vintage red trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0024.png",
+      "caption": "elegant green trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0025.png",
+      "caption": "elegant green trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0026.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0027.png",
+      "caption": "classic blue trousers made of polyester",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0028.png",
+      "caption": "a pair of blue silk pants with a modern fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0029.png",
+      "caption": "a pair of pink silk pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0030.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0031.png",
+      "caption": "casual yellow trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0032.png",
+      "caption": "casual green trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0033.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0034.png",
+      "caption": "a pair of grey cotton pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0035.png",
+      "caption": "a pair of grey denim pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0036.png",
+      "caption": "modern grey trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0037.png",
+      "caption": "a pair of black linen pants with a casual fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0038.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0039.png",
+      "caption": "a pair of yellow leather pants with a modern fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0040.png",
+      "caption": "a pair of blue cotton pants with a modern fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0041.png",
+      "caption": "modern grey trousers made of polyester",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0042.png",
+      "caption": "a pair of white polyester pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0043.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0044.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0045.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0046.png",
+      "caption": "a pair of grey leather pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0047.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0048.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0049.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0050.png",
+      "caption": "sporty grey trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0051.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0052.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0053.png",
+      "caption": "classic grey trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0054.png",
+      "caption": "a pair of pink cotton pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0055.png",
+      "caption": "casual blue trousers made of polyester",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0056.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0057.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0058.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0059.png",
+      "caption": "a pair of grey leather pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0060.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0061.png",
+      "caption": "classic blue trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0062.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0063.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0064.png",
+      "caption": "casual brown trousers made of polyester",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0065.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0066.png",
+      "caption": "elegant white trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0067.png",
+      "caption": "casual brown trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0068.png",
+      "caption": "a pair of brown silk pants with a modern fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0069.png",
+      "caption": "casual black trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0070.png",
+      "caption": "elegant grey trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0071.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0072.png",
+      "caption": "a pair of black polyester pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0073.png",
+      "caption": "elegant white trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0074.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0075.png",
+      "caption": "classic white trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0076.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0077.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0078.png",
+      "caption": "a pair of green denim pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0079.png",
+      "caption": "a pair of yellow wool pants with a casual fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0080.png",
+      "caption": "a pair of green polyester pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0081.png",
+      "caption": "modern red trousers made of linen",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0082.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0083.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0084.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0085.png",
+      "caption": "sporty red trousers made of silk",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0086.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0087.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0088.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0089.png",
+      "caption": "classic green trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0090.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0091.png",
+      "caption": "sporty yellow trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0092.png",
+      "caption": "casual black trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0093.png",
+      "caption": "casual pink trousers made of cotton",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0094.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0095.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0096.png",
+      "caption": "modern yellow trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0097.png",
+      "caption": "a pair of brown cotton pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0098.png",
+      "caption": "a pair of yellow cotton pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0099.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0100.png",
+      "caption": "a pair of green silk pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0101.png",
+      "caption": "a pair of red wool pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0102.png",
+      "caption": "a pair of black leather pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0103.png",
+      "caption": "modern red trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0104.png",
+      "caption": "a pair of black wool pants with a casual fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0105.png",
+      "caption": "a pair of pink cotton pants with a casual fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0106.png",
+      "caption": "classic red trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0107.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0108.png",
+      "caption": "a pair of white linen pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0109.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0110.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0111.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0112.png",
+      "caption": "a pair of grey polyester pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0113.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0114.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0115.png",
+      "caption": "casual yellow trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0116.png",
+      "caption": "a pair of green denim pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/pants_0117.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/pants_0118.png",
+      "caption": "casual grey trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/pants_0119.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0000.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0001.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0002.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0003.png",
+      "caption": "a pair of green denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0004.png",
+      "caption": "classic yellow sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0005.png",
+      "caption": "a pair of blue leather shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0006.png",
+      "caption": "a pair of black denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0007.png",
+      "caption": "a pair of black polyester shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0008.png",
+      "caption": "vintage yellow sneakers in silk",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0009.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0010.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0011.png",
+      "caption": "a pair of pink cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0012.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0013.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0014.png",
+      "caption": "sporty grey sneakers in wool",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0015.png",
+      "caption": "a pair of yellow silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0016.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0017.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0018.png",
+      "caption": "elegant black sneakers in linen",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0019.png",
+      "caption": "a pair of brown denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0020.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0021.png",
+      "caption": "a pair of white wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0022.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0023.png",
+      "caption": "a pair of white leather shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0024.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0025.png",
+      "caption": "elegant green sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0026.png",
+      "caption": "a pair of grey linen shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0027.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0028.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0029.png",
+      "caption": "a pair of yellow silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0030.png",
+      "caption": "classic pink sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0031.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0032.png",
+      "caption": "a pair of red silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0033.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0034.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0035.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0036.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0037.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0038.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0039.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0040.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0041.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0042.png",
+      "caption": "sporty grey sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0043.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0044.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0045.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0046.png",
+      "caption": "a pair of blue leather shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0047.png",
+      "caption": "a pair of black denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0048.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0049.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0050.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0051.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0052.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0053.png",
+      "caption": "elegant blue sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0054.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0055.png",
+      "caption": "a pair of white polyester shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0056.png",
+      "caption": "a pair of yellow silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0057.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0058.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0059.png",
+      "caption": "a pair of brown denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0060.png",
+      "caption": "a pair of green denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0061.png",
+      "caption": "a pair of white wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0062.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0063.png",
+      "caption": "vintage yellow sneakers in polyester",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0064.png",
+      "caption": "sporty green sneakers in wool",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0065.png",
+      "caption": "a pair of pink linen shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0066.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0067.png",
+      "caption": "a pair of brown leather shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0068.png",
+      "caption": "a pair of blue wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0069.png",
+      "caption": "elegant red sneakers in polyester",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0070.png",
+      "caption": "a pair of green denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0071.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0072.png",
+      "caption": "casual white sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0073.png",
+      "caption": "a pair of white linen shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0074.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0075.png",
+      "caption": "vintage pink sneakers in polyester",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0076.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0077.png",
+      "caption": "a pair of yellow wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0078.png",
+      "caption": "modern blue sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0079.png",
+      "caption": "a pair of white cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0080.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0081.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0082.png",
+      "caption": "a pair of green linen shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0083.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0084.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0085.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0086.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0087.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0088.png",
+      "caption": "elegant yellow sneakers in cotton",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0089.png",
+      "caption": "classic white sneakers in wool",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0090.png",
+      "caption": "a pair of black polyester shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0091.png",
+      "caption": "sporty green sneakers in wool",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0092.png",
+      "caption": "a pair of brown cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0093.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0094.png",
+      "caption": "a pair of pink denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0095.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0096.png",
+      "caption": "a pair of green wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0097.png",
+      "caption": "elegant green sneakers in silk",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0098.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0099.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0100.png",
+      "caption": "a pair of brown polyester shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0101.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0102.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0103.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0104.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0105.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0106.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0107.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0108.png",
+      "caption": "a pair of green leather shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0109.png",
+      "caption": "a pair of red linen shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0110.png",
+      "caption": "sporty red sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0111.png",
+      "caption": "a pair of black denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0112.png",
+      "caption": "vintage yellow sneakers in linen",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0113.png",
+      "caption": "a pair of yellow cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0114.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0115.png",
+      "caption": "vintage yellow sneakers in cotton",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/shoes_0116.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/shoes_0117.png",
+      "caption": "a pair of grey silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0118.png",
+      "caption": "casual grey sneakers in silk",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/shoes_0119.png",
+      "caption": "a pair of grey cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0000.png",
+      "caption": "casual green shoulder bag made of polyester",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0001.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0002.png",
+      "caption": "a red denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0003.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0004.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0005.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0006.png",
+      "caption": "elegant red shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0007.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0008.png",
+      "caption": "a green leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0009.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0010.png",
+      "caption": "a green wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0011.png",
+      "caption": "modern brown shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0012.png",
+      "caption": "modern blue shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0013.png",
+      "caption": "a blue wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0014.png",
+      "caption": "modern green shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0015.png",
+      "caption": "a red denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0016.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0017.png",
+      "caption": "a red linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0018.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0019.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0020.png",
+      "caption": "a black leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0021.png",
+      "caption": "vintage grey shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0022.png",
+      "caption": "elegant red shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0023.png",
+      "caption": "a white wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0024.png",
+      "caption": "modern blue shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0025.png",
+      "caption": "elegant yellow shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0026.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0027.png",
+      "caption": "a grey linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0028.png",
+      "caption": "modern pink shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0029.png",
+      "caption": "sporty yellow shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0030.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0031.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0032.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0033.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0034.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0035.png",
+      "caption": "a yellow linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0036.png",
+      "caption": "a yellow cotton handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0037.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0038.png",
+      "caption": "vintage grey shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0039.png",
+      "caption": "elegant black shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0040.png",
+      "caption": "casual red shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0041.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0042.png",
+      "caption": "vintage yellow shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0043.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0044.png",
+      "caption": "casual white shoulder bag made of silk",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0045.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0046.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0047.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0048.png",
+      "caption": "modern green shoulder bag made of polyester",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0049.png",
+      "caption": "casual white shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0050.png",
+      "caption": "sporty white shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0051.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0052.png",
+      "caption": "sporty brown shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0053.png",
+      "caption": "a brown denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0054.png",
+      "caption": "elegant brown shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0055.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0056.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0057.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0058.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0059.png",
+      "caption": "a blue linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0060.png",
+      "caption": "modern pink shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0061.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0062.png",
+      "caption": "modern pink shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0063.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0064.png",
+      "caption": "a white polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0065.png",
+      "caption": "modern red shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0066.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0067.png",
+      "caption": "a brown wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0068.png",
+      "caption": "elegant white shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0069.png",
+      "caption": "casual yellow shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0070.png",
+      "caption": "classic white shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0071.png",
+      "caption": "casual green shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0072.png",
+      "caption": "a grey leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0073.png",
+      "caption": "a grey linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0074.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0075.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0076.png",
+      "caption": "a grey silk handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0077.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0078.png",
+      "caption": "a black polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0079.png",
+      "caption": "a red cotton handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0080.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0081.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0082.png",
+      "caption": "a green denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0083.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0084.png",
+      "caption": "classic brown shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0085.png",
+      "caption": "a red linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0086.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0087.png",
+      "caption": "vintage white shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0088.png",
+      "caption": "sporty red shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0089.png",
+      "caption": "classic pink shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0090.png",
+      "caption": "a blue wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0091.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0092.png",
+      "caption": "a grey polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0093.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0094.png",
+      "caption": "casual black shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0095.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0096.png",
+      "caption": "classic blue shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0097.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0098.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0099.png",
+      "caption": "a black leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0100.png",
+      "caption": "a pink polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0101.png",
+      "caption": "sporty yellow shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0102.png",
+      "caption": "a pink polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0103.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0104.png",
+      "caption": "a blue linen handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0105.png",
+      "caption": "sporty brown shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0106.png",
+      "caption": "elegant grey shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0107.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0108.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0109.png",
+      "caption": "a blue polyester handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0110.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0111.png",
+      "caption": "a green wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0112.png",
+      "caption": "sporty brown shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0113.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0114.png",
+      "caption": "a pink leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0115.png",
+      "caption": "casual pink shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0116.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/bag_0117.png",
+      "caption": "vintage pink shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/bag_0118.png",
+      "caption": "a pink denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/bag_0119.png",
+      "caption": "casual red shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0000.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0001.png",
+      "caption": "a yellow leather hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0002.png",
+      "caption": "a pink silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0003.png",
+      "caption": "a black linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0004.png",
+      "caption": "modern white cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0005.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0006.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0007.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0008.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0009.png",
+      "caption": "classic yellow cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0010.png",
+      "caption": "a pink linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0011.png",
+      "caption": "a blue linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0012.png",
+      "caption": "a white linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0013.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0014.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0015.png",
+      "caption": "casual yellow cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0016.png",
+      "caption": "a brown wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0017.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0018.png",
+      "caption": "vintage brown cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0019.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0020.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0021.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0022.png",
+      "caption": "a brown denim hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0023.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0024.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0025.png",
+      "caption": "vintage white cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0026.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0027.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0028.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0029.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0030.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0031.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0032.png",
+      "caption": "a black silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0033.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0034.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0035.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0036.png",
+      "caption": "a green silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0037.png",
+      "caption": "a green linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0038.png",
+      "caption": "a grey wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0039.png",
+      "caption": "elegant pink cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0040.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0041.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0042.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0043.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0044.png",
+      "caption": "classic grey cap made of cotton",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0045.png",
+      "caption": "sporty red cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0046.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0047.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0048.png",
+      "caption": "a blue silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0049.png",
+      "caption": "a red leather hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0050.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0051.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0052.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0053.png",
+      "caption": "a green polyester hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0054.png",
+      "caption": "a blue leather hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0055.png",
+      "caption": "elegant red cap made of cotton",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0056.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0057.png",
+      "caption": "a brown wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0058.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0059.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0060.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0061.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0062.png",
+      "caption": "a brown cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0063.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0064.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0065.png",
+      "caption": "sporty white cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0066.png",
+      "caption": "a blue wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0067.png",
+      "caption": "vintage green cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0068.png",
+      "caption": "a grey wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0069.png",
+      "caption": "vintage white cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0070.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0071.png",
+      "caption": "vintage pink cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0072.png",
+      "caption": "a white linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0073.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0074.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0075.png",
+      "caption": "classic yellow cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0076.png",
+      "caption": "modern black cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0077.png",
+      "caption": "elegant green cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0078.png",
+      "caption": "elegant brown cap made of polyester",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0079.png",
+      "caption": "sporty red cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0080.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0081.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0082.png",
+      "caption": "a green cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0083.png",
+      "caption": "elegant green cap made of wool",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0084.png",
+      "caption": "classic white cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0085.png",
+      "caption": "a grey polyester hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0086.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0087.png",
+      "caption": "sporty pink cap made of silk",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0088.png",
+      "caption": "a white cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0089.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0090.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0091.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0092.png",
+      "caption": "classic green cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0093.png",
+      "caption": "a blue leather hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0094.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0095.png",
+      "caption": "a white denim hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0096.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0097.png",
+      "caption": "a grey silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0098.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0099.png",
+      "caption": "elegant green cap made of wool",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0100.png",
+      "caption": "sporty red cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0101.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0102.png",
+      "caption": "modern grey cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/train/hat_0103.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0104.png",
+      "caption": "elegant red cap made of wool",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0105.png",
+      "caption": "a white cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0106.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0107.png",
+      "caption": "casual pink cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0108.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0109.png",
+      "caption": "modern yellow cap made of silk",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0110.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0111.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0112.png",
+      "caption": "a pink wool hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0113.png",
+      "caption": "elegant grey cap made of wool",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0114.png",
+      "caption": "elegant blue cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0115.png",
+      "caption": "a yellow silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0116.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/train/hat_0117.png",
+      "caption": "classic yellow cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0118.png",
+      "caption": "a green linen hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/train/hat_0119.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "train",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0000.png",
+      "caption": "a grey wool short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0001.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0002.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0003.png",
+      "caption": "a yellow linen short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0004.png",
+      "caption": "a blue denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0005.png",
+      "caption": "modern green t shirt made of silk",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0006.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0007.png",
+      "caption": "vintage black t shirt made of wool",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0008.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0009.png",
+      "caption": "a blue denim short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0010.png",
+      "caption": "vintage blue t shirt made of leather",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0011.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0012.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0013.png",
+      "caption": "a yellow polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0014.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0015.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0016.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0017.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0018.png",
+      "caption": "classic grey t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0019.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0020.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0021.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0022.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0023.png",
+      "caption": "a brown polyester short sleeve t shirt with a round neck",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0024.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0025.png",
+      "caption": "vintage pink t shirt made of polyester",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0026.png",
+      "caption": "sporty brown t shirt made of linen",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/t_shirt_0027.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0028.png",
+      "caption": "a fashion item",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/t_shirt_0029.png",
+      "caption": "vintage brown t shirt made of denim",
+      "label": 0,
+      "label_name": "t_shirt",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/dress_0000.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0001.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0002.png",
+      "caption": "a green summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0003.png",
+      "caption": "an classic yellow polyester dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0004.png",
+      "caption": "a white summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0005.png",
+      "caption": "a yellow summer dress in soft linen",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0006.png",
+      "caption": "an classic brown leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0007.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0008.png",
+      "caption": "an vintage brown linen dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0009.png",
+      "caption": "a red summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0010.png",
+      "caption": "a red summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0011.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0012.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0013.png",
+      "caption": "an classic green polyester dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0014.png",
+      "caption": "an modern white cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0015.png",
+      "caption": "an modern black leather dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0016.png",
+      "caption": "a pink summer dress in soft polyester",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0017.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0018.png",
+      "caption": "a white summer dress in soft leather",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0019.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0020.png",
+      "caption": "an modern brown silk dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0021.png",
+      "caption": "a grey summer dress in soft wool",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0022.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0023.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0024.png",
+      "caption": "an vintage green cotton dress with a long skirt",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0025.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0026.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0027.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/dress_0028.png",
+      "caption": "a yellow summer dress in soft cotton",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/dress_0029.png",
+      "caption": "a fashion item",
+      "label": 1,
+      "label_name": "dress",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0000.png",
+      "caption": "a pair of pink cotton pants with a elegant fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0001.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0002.png",
+      "caption": "sporty brown trousers made of silk",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0003.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0004.png",
+      "caption": "a pair of grey linen pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0005.png",
+      "caption": "sporty black trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0006.png",
+      "caption": "sporty grey trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/pants_0007.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0008.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0009.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0010.png",
+      "caption": "a pair of red leather pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0011.png",
+      "caption": "modern pink trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0012.png",
+      "caption": "a pair of yellow polyester pants with a casual fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0013.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0014.png",
+      "caption": "casual black trousers made of silk",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0015.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0016.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0017.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0018.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0019.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0020.png",
+      "caption": "a pair of pink silk pants with a vintage fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0021.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0022.png",
+      "caption": "a pair of yellow silk pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0023.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0024.png",
+      "caption": "a fashion item",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/pants_0025.png",
+      "caption": "casual brown trousers made of leather",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0026.png",
+      "caption": "a pair of red leather pants with a classic fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/pants_0027.png",
+      "caption": "elegant white trousers made of wool",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/pants_0028.png",
+      "caption": "vintage pink trousers made of denim",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/pants_0029.png",
+      "caption": "a pair of black denim pants with a sporty fit",
+      "label": 2,
+      "label_name": "pants",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/shoes_0000.png",
+      "caption": "classic green sneakers in silk",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/shoes_0001.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0002.png",
+      "caption": "classic red sneakers in linen",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0003.png",
+      "caption": "a pair of yellow cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0004.png",
+      "caption": "a pair of black wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0005.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0006.png",
+      "caption": "a pair of brown silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0007.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0008.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0009.png",
+      "caption": "a pair of yellow wool shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0010.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0011.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0012.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0013.png",
+      "caption": "vintage white sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0014.png",
+      "caption": "a pair of black cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0015.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0016.png",
+      "caption": "vintage blue sneakers in linen",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0017.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0018.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0019.png",
+      "caption": "a pair of brown denim shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0020.png",
+      "caption": "vintage pink sneakers in leather",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/shoes_0021.png",
+      "caption": "elegant pink sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0022.png",
+      "caption": "modern green sneakers in polyester",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/shoes_0023.png",
+      "caption": "a pair of brown cotton shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/shoes_0024.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0025.png",
+      "caption": "a fashion item",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/shoes_0026.png",
+      "caption": "a pair of green silk shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0027.png",
+      "caption": "elegant grey sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0028.png",
+      "caption": "a pair of grey polyester shoes with flat soles",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/shoes_0029.png",
+      "caption": "classic brown sneakers in denim",
+      "label": 3,
+      "label_name": "shoes",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0000.png",
+      "caption": "vintage black shoulder bag made of polyester",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0001.png",
+      "caption": "casual brown shoulder bag made of polyester",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0002.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0003.png",
+      "caption": "modern pink shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0004.png",
+      "caption": "elegant pink shoulder bag made of leather",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0005.png",
+      "caption": "a red silk handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0006.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0007.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0008.png",
+      "caption": "casual green shoulder bag made of silk",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0009.png",
+      "caption": "sporty grey shoulder bag made of silk",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0010.png",
+      "caption": "elegant green shoulder bag made of linen",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0011.png",
+      "caption": "a pink wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0012.png",
+      "caption": "elegant yellow shoulder bag made of cotton",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0013.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0014.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0015.png",
+      "caption": "a white silk handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0016.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0017.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0018.png",
+      "caption": "a brown cotton handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0019.png",
+      "caption": "sporty pink shoulder bag made of silk",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0020.png",
+      "caption": "a pink wool handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0021.png",
+      "caption": "sporty grey shoulder bag made of wool",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0022.png",
+      "caption": "a pink denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0023.png",
+      "caption": "a green denim handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0024.png",
+      "caption": "elegant blue shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0025.png",
+      "caption": "modern yellow shoulder bag made of denim",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0026.png",
+      "caption": "a red silk handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0027.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/bag_0028.png",
+      "caption": "a blue leather handbag with a long strap",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/bag_0029.png",
+      "caption": "a fashion item",
+      "label": 4,
+      "label_name": "bag",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0000.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0001.png",
+      "caption": "a brown leather hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0002.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0003.png",
+      "caption": "a blue cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0004.png",
+      "caption": "elegant white cap made of cotton",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0005.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0006.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0007.png",
+      "caption": "a green polyester hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/hat_0008.png",
+      "caption": "a white denim hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0009.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0010.png",
+      "caption": "a brown cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0011.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0012.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0013.png",
+      "caption": "classic brown cap made of linen",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0014.png",
+      "caption": "a grey silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/hat_0015.png",
+      "caption": "a pink cotton hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0016.png",
+      "caption": "vintage green cap made of leather",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/hat_0017.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0018.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0019.png",
+      "caption": "casual grey cap made of silk",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0020.png",
+      "caption": "a red silk hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "none"
+    },
+    {
+      "image": "images/test/hat_0021.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0022.png",
+      "caption": "a black denim hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0023.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0024.png",
+      "caption": "elegant pink cap made of denim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0025.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0026.png",
+      "caption": "a pink denim hat with a wide brim",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    },
+    {
+      "image": "images/test/hat_0027.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0028.png",
+      "caption": "a fashion item",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "text"
+    },
+    {
+      "image": "images/test/hat_0029.png",
+      "caption": "casual green cap made of silk",
+      "label": 5,
+      "label_name": "hat",
+      "split": "test",
+      "corrupt": "image"
+    }
+  ],
+  "image_size": 64
+}
