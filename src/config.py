@@ -107,6 +107,11 @@ EPOCHS: int = 15               # upper bound; EarlyStopping usually stops sooner
 LEARNING_RATE: float = 1e-3
 EARLY_STOPPING_PATIENCE: int = 3
 
+# Opt-in only: forcing fully deterministic ops can raise UnimplementedError mid-
+# training if a GPU op lacks a deterministic kernel. Fixed seeds already give us
+# practical reproducibility; flip this on only if you need bit-exact runs.
+DETERMINISTIC_OPS: bool = False
+
 # Small, manual hyperparameter grid for Phase 4 (no AutoML). Each entry is a
 # partial override applied on top of the defaults above.
 HP_GRID: list[dict] = [
@@ -137,11 +142,13 @@ def set_seeds(seed: int = SEED) -> None:
         import tensorflow as tf
 
         tf.random.set_seed(seed)
-        # Opt into deterministic ops where the installed TF supports it.
-        try:
-            tf.config.experimental.enable_op_determinism()
-        except Exception:  # pragma: no cover - older TF without this API
-            pass
+        # Opt-in only (see DETERMINISTIC_OPS): enabling this can make fit() raise
+        # if a GPU op has no deterministic implementation.
+        if DETERMINISTIC_OPS:
+            try:
+                tf.config.experimental.enable_op_determinism()
+            except Exception:  # pragma: no cover - older TF without this API
+                pass
     except ImportError:
         # TF absent (local dev / config import test) — Python+NumPy seeded above.
         pass

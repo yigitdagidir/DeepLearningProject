@@ -60,18 +60,31 @@ def decode_image(path: tf.Tensor) -> tf.Tensor:
 # --------------------------------------------------------------------------- #
 def make_dataset(
     manifest_path: Path,
+    model_variant: str = "fusion",
     training: bool = False,
     batch_size: int = config.BATCH_SIZE,
     shuffle_buffer: int = 4096,
 ) -> tf.data.Dataset:
-    """Build a batched, prefetched dataset of ``((image, text), label)``.
+    """Build a batched, prefetched dataset shaped for ``model_variant``.
+
+    The element structure is tailored to the model so we **only decode images
+    when they are actually used** (the text-only branch must not pay the JPEG
+    decode/resize cost):
+
+    * ``"image"``  -> ``(image, label)``
+    * ``"text"``   -> ``(text,  label)``
+    * ``"fusion"`` -> ``((image, text), label)``
 
     Args:
         manifest_path: CSV split manifest (train/val/test).
+        model_variant: one of ``image`` / ``text`` / ``fusion``.
         training: if True, shuffle each epoch (val/test stay ordered).
         batch_size: batch size.
         shuffle_buffer: shuffle buffer size for the training split.
     """
+    if model_variant not in config.MODEL_VARIANTS:
+        raise ValueError(f"Unknown model_variant '{model_variant}'.")
+
     df = load_manifest(manifest_path)
     paths = df["image_path"].astype(str).to_numpy()
     texts = df[config.TEXT_COLUMN].astype(str).to_numpy()
@@ -83,6 +96,10 @@ def make_dataset(
                         reshuffle_each_iteration=True)
 
     def _map(path, text, label):
+        if model_variant == "image":
+            return decode_image(path), label
+        if model_variant == "text":
+            return text, label
         return (decode_image(path), text), label
 
     ds = ds.map(_map, num_parallel_calls=AUTOTUNE)

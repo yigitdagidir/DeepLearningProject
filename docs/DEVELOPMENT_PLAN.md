@@ -265,6 +265,14 @@ support Phases 1–4.
 *(Reverse-chronological. Append a dated one-line entry whenever a task completes or a
 decision changes.)*
 
+- **2026-06-06** — **Post-review fixes (max-effort code review).** (1) `make_dataset`
+  is now modality-aware (`image`/`text`/`fusion`) so the text-only baseline no longer
+  decodes images it discards — removed `adapt_for_model`. (2) `evaluate.py` reads test
+  labels from the manifest instead of iterating the decoded dataset twice. (3)
+  `cap_subset` uses `GroupBy.sample` (no pandas-3.0 `apply` column-drop / FutureWarning).
+  (4) op-determinism is now opt-in (`config.DETERMINISTIC_OPS=False`) to avoid GPU
+  `UnimplementedError` mid-fit. All modules recompile; preprocess re-tested under strict
+  FutureWarning.
 - **2026-06-06** — **Executed the development plan end to end.** Built the full `src/`
   package (config, data download/preprocess/dataset, image/text/fusion models, train,
   evaluate, compare), the EDA notebook, and a turnkey Colab runner

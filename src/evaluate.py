@@ -33,13 +33,7 @@ from sklearn.metrics import (
 )
 
 from src import config
-from src.data.dataset import make_dataset
-from src.train import adapt_for_model
-
-
-def _collect_labels(ds: tf.data.Dataset) -> np.ndarray:
-    """Materialise the integer labels from a ``(x, y)`` dataset, in order."""
-    return np.concatenate([y.numpy() for _, y in ds], axis=0)
+from src.data.dataset import load_manifest, make_dataset
 
 
 def plot_confusion_matrix(cm: np.ndarray, class_list: list[str], out_path) -> None:
@@ -70,12 +64,13 @@ def evaluate(model_variant: str, run_name: str | None = None) -> dict:
         )
 
     class_list = config.load_class_list()
-    test_ds = adapt_for_model(
-        make_dataset(config.TEST_MANIFEST, training=False), model_variant
-    )
+    # Labels come straight from the manifest; the test pipeline is unshuffled and
+    # tf.data map is order-preserving, so predictions line up row-for-row — no
+    # need to decode every image twice just to recover the labels.
+    y_true = load_manifest(config.TEST_MANIFEST)["label"].astype(int).to_numpy()
+    test_ds = make_dataset(config.TEST_MANIFEST, model_variant, training=False)
 
     model = tf.keras.models.load_model(model_path)
-    y_true = _collect_labels(test_ds)
     y_prob = model.predict(test_ds)
     y_pred = np.argmax(y_prob, axis=1)
 

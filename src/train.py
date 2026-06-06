@@ -33,18 +33,6 @@ from src.data.dataset import get_text_vectorizer, make_dataset
 
 
 # --------------------------------------------------------------------------- #
-# Dataset adaptation per variant
-# --------------------------------------------------------------------------- #
-def adapt_for_model(ds: tf.data.Dataset, model_variant: str) -> tf.data.Dataset:
-    """Project the shared ``((image, text), label)`` dataset onto a variant's inputs."""
-    if model_variant == "image":
-        return ds.map(lambda inputs, y: (inputs[0], y), num_parallel_calls=tf.data.AUTOTUNE)
-    if model_variant == "text":
-        return ds.map(lambda inputs, y: (inputs[1], y), num_parallel_calls=tf.data.AUTOTUNE)
-    return ds  # fusion consumes (image, text) directly (input order matches)
-
-
-# --------------------------------------------------------------------------- #
 # Model construction
 # --------------------------------------------------------------------------- #
 def build_and_compile(
@@ -121,10 +109,10 @@ def train(
     run_name = run_name or model_variant
     out_dir = config.artifacts_dir_for(run_name)
 
-    train_ds = adapt_for_model(make_dataset(config.TRAIN_MANIFEST, training=True,
-                                            batch_size=batch_size), model_variant)
-    val_ds = adapt_for_model(make_dataset(config.VAL_MANIFEST, training=False,
-                                          batch_size=batch_size), model_variant)
+    train_ds = make_dataset(config.TRAIN_MANIFEST, model_variant, training=True,
+                            batch_size=batch_size)
+    val_ds = make_dataset(config.VAL_MANIFEST, model_variant, training=False,
+                          batch_size=batch_size)
 
     model = build_and_compile(model_variant, learning_rate, dropout,
                               fusion_units, trainable_backbone)

@@ -86,9 +86,12 @@ def cap_subset(df: pd.DataFrame, cap: int | None = config.SUBSET_CAP) -> pd.Data
     if cap is None or len(df) <= cap:
         return df
     frac = cap / len(df)
+    # GroupBy.sample does stratified per-class sampling directly — avoids the
+    # groupby(...).apply(...) pitfall where pandas >=3.0 drops the grouping
+    # ('label') column from the result, which would later break the split.
     capped = (
         df.groupby("label", group_keys=False)
-        .apply(lambda g: g.sample(frac=frac, random_state=config.SEED))
+        .sample(frac=frac, random_state=config.SEED)
         .reset_index(drop=True)
     )
     print(f"[preprocess] Capped dataset {len(df)} -> {len(capped)} rows (subset).")
