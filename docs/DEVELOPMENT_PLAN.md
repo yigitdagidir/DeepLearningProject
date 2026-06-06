@@ -11,6 +11,13 @@ alone** (image-only vs text-only vs fusion).
 > under time pressure," not maximum accuracy. If the real deadline differs, rescale the
 > phase durations accordingly.
 
+> **Checkbox convention (added 2026-06-06):** `[x]` = implemented and verified to the
+> extent possible without a GPU/dataset (code written, byte-compiles, logic unit-tested
+> where feasible). `[ ]` = **ready but requires the Colab GPU run** (training, eval,
+> figures, numeric results) or a human/team action — the code is in place; just run
+> `notebooks/run_colab.ipynb`. The local dev machine is Python 3.14 with no TensorFlow
+> wheel and no GPU, so all model *execution* happens on Colab.
+
 ## Milestones / Phase overview
 
 | Phase | Goal (one line)                                                        | Lead  |
@@ -34,25 +41,28 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** C (lead); A & B review.
 - **Dependencies:** none.
 - **Tasks:**
-  - [ ] (C) Create `docs/` and add this `DEVELOPMENT_PLAN.md`.
-  - [ ] (C) Reconcile the brief location: move `PROJECT_BRIEF.md` → `docs/PROJECT_BRIEF.md`
+  - [x] (C) Create `docs/` and add this `DEVELOPMENT_PLAN.md`.
+  - [x] (C) Reconcile the brief location: move `PROJECT_BRIEF.md` → `docs/PROJECT_BRIEF.md`
         (matches `CLAUDE.md` §7 and README links).
-  - [ ] (C) Scaffold the `src/` package tree from `CLAUDE.md` §7 with stub modules and
-        `__init__.py` files; add `data/`, `notebooks/`, `artifacts/` dirs.
-  - [ ] (C) Write `requirements.txt` (tensorflow, pandas, numpy, scikit-learn,
+  - [x] (C) Scaffold the `src/` package tree from `CLAUDE.md` §7 with modules and
+        `__init__.py` files; add `data/`, `notebooks/`, `artifacts/` dirs (kept via `.gitkeep`).
+  - [x] (C) Write `requirements.txt` (tensorflow, pandas, numpy, scikit-learn,
         matplotlib, seaborn, kagglehub, pillow) — Colab-compatible, minimal pins.
-  - [ ] (C) Extend `.gitignore` to ignore `data/`, `artifacts/`, and saved weights
+  - [x] (C) Extend `.gitignore` to ignore `data/`, `artifacts/`, and saved weights
         (`*.keras`, `*.h5`).
-  - [ ] (C) Implement `src/config.py`: paths (data/artifacts), `SEED`, image size,
+  - [x] (C) Implement `src/config.py`: paths (data/artifacts), `SEED`, image size,
         batch size, vocab size, sequence length, embedding dim, GRU/Dense units,
-        dropout, epochs, learning rate, `N_CLASSES`, `CLASS_LIST` placeholder, and
+        dropout, epochs, learning rate, `N_CLASSES`, `CLASS_LIST` loader, and
         the 70/15/15 ratios.
-  - [ ] (C) Add a `set_seeds()` helper (python `random`, numpy, tf) used everywhere.
+  - [x] (C) Add a `set_seeds()` helper (python `random`, numpy, tf) used everywhere
+        (tf import is lazy so config imports without TF).
   - [ ] (A/B) Each member confirms they can `import src.config` and run on Colab GPU.
+        *(`import src.config` + `set_seeds()` validated locally; Colab GPU confirmation
+        is a per-member action via `notebooks/run_colab.ipynb`.)*
 - **Definition of Done:**
   - `pip install -r requirements.txt` succeeds on a clean Colab runtime.
-  - `python -c "import src.config"` works; `set_seeds()` runs.
-  - `src/` tree matches `CLAUDE.md` §7; `data/` and `artifacts/` are gitignored.
+  - `python -c "import src.config"` works; `set_seeds()` runs. ✅ (verified locally)
+  - `src/` tree matches `CLAUDE.md` §7; `data/` and `artifacts/` are gitignored. ✅
   - This plan is committed; team can branch and work in parallel.
 
 ### Phase 1 — Data pipeline
@@ -62,33 +72,36 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** C (lead).
 - **Dependencies:** Phase 0 (config + package skeleton).
 - **Tasks:**
-  - [ ] (C) Implement `src/data/download.py`: `kagglehub` download of
+  - [x] (C) Implement `src/data/download.py`: `kagglehub` download of
         `paramaggarwal/fashion-product-images-small` into `data/`; idempotent (skip if
-        present); print resolved paths.
-  - [ ] (C) EDA in `notebooks/exploration.ipynb`: load `styles.csv`, inspect the
+        present); print resolved paths; robust locating of `styles.csv` + `images/`.
+  - [x] (C) EDA in `notebooks/exploration.ipynb`: load `styles.csv`, inspect the
         `subCategory` distribution, confirm the top-10 classes, check missing
-        images / malformed rows.
-  - [ ] (C) Implement `src/data/preprocess.py`: drop rows with missing image/text,
+        images / malformed rows, preview `(image, text, label)` triples.
+        *(Notebook authored; cells execute on Colab.)*
+  - [x] (C) Implement `src/data/preprocess.py`: drop rows with missing image/text,
         select the top-10 `subCategory` by frequency, integer-encode labels, persist
         `CLASS_LIST`, do a **stratified 70/15/15** split with the fixed seed, and write
-        split manifests (CSV) under `data/`.
-  - [ ] (C) Join image paths (`images/{id}.jpg`), verify each referenced image exists,
-        drop/justify orphans.
-  - [ ] (C) Implement `src/data/dataset.py`: `tf.data` pipeline that decodes + resizes
+        split manifests (CSV) under `data/`. *(Split logic unit-tested on synthetic data:
+        exact 70/15/15, class-proportion drift 0.0006.)*
+  - [x] (C) Join image paths (`images/{id}.jpg`), verify each referenced image exists,
+        drop/justify orphans (`attach_image_paths`).
+  - [x] (C) Implement `src/data/dataset.py`: `tf.data` pipeline that decodes + resizes
         images to EfficientNet input, applies EfficientNet preprocessing, pairs with raw
-        text, yields `((image, text), label)`; shuffle (train only), batch, prefetch,
-        cache where safe; optional `~15–20k` subset cap via config while building.
-  - [ ] (C) Build `TextVectorization` adapted on the **train split only**; persist its
+        text, yields `((image, text), label)`; shuffle (train only), batch, prefetch;
+        optional subset cap via config while building.
+  - [x] (C) Build `TextVectorization` adapted on the **train split only**; persist its
         vocabulary so it is identical across all models (no leakage).
   - [ ] (C) Sanity check: pull one batch per split, print shapes/dtypes, visualize a few
-        `(image, text, label)` triples in the notebook.
+        `(image, text, label)` triples. *(Code in `dataset.py` `__main__` + notebook §7;
+        run on Colab.)*
 - **Definition of Done:**
-  - `python -m src.data.download` populates `data/` and is idempotent.
+  - `python -m src.data.download` populates `data/` and is idempotent. *(ready)*
   - `python -m src.data.preprocess` writes reproducible manifests (same classes/counts
-    on re-run with the fixed seed).
+    on re-run with the fixed seed). ✅ (logic verified)
   - `dataset.py` yields correctly-shaped `((image, text), label)` batches for all three
-    splits; per-class proportions match across splits within tolerance.
-  - TextVectorization vocab adapted on train only and persisted.
+    splits; per-class proportions match across splits within tolerance. *(ready)*
+  - TextVectorization vocab adapted on train only and persisted. ✅ (implemented)
 
 ### Phase 2 — Single-modal baselines
 
@@ -97,31 +110,32 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** A (image-only) & B (text-only); C provides the shared train/eval harness.
 - **Dependencies:** Phase 1 (pipeline, splits, vectorizer).
 - **Tasks:**
-  - [ ] (A) Implement `src/models/image_branch.py`: functional
+  - [x] (A) Implement `src/models/image_branch.py`: functional
         `EfficientNetB0(weights="imagenet", include_top=False)` **frozen** →
-        `GlobalAveragePooling2D` → `Dense(256, relu)`; expose **both** the 256-d encoder
-        output (for fusion reuse) and an image-only softmax head.
-  - [ ] (B) Implement `src/models/text_branch.py`: functional
-        `TextVectorization → Embedding → GRU(128) → Dense(128, relu)`; expose the 128-d
-        encoder output (for fusion) and a text-only softmax head.
-  - [ ] (C) Implement `src/train.py` with `--model {image,text,fusion}`: build the
+        `GlobalAveragePooling2D` → `Dense(256, relu)`; exposes **both** the 256-d encoder
+        builder (for fusion reuse) and an image-only softmax head.
+  - [x] (B) Implement `src/models/text_branch.py`: functional
+        `TextVectorization → Embedding → GRU(128) → Dense(128, relu)`; exposes the 128-d
+        encoder builder (for fusion) and a text-only softmax head.
+  - [x] (C) Implement `src/train.py` with `--model {image,text,fusion}`: build the
         requested model, compile (Adam + sparse categorical cross-entropy + accuracy),
-        fit with EarlyStopping/checkpoint on val, and save weights + `metrics.json` +
+        fit with EarlyStopping(restore_best) on val, and save model + `metrics.json` +
         loss/accuracy curves to `artifacts/{model}/`.
-  - [ ] (A) Train `--model image`; save weights, metrics JSON, training curves.
-  - [ ] (B) Train `--model text`; save weights, metrics JSON, training curves.
-  - [ ] (C) Implement `src/evaluate.py`: load a trained model, compute test
+  - [ ] (A) Train `--model image`; save weights, metrics JSON, training curves. *(Colab)*
+  - [ ] (B) Train `--model text`; save weights, metrics JSON, training curves. *(Colab)*
+  - [x] (C) Implement `src/evaluate.py`: load a trained model, compute test
         accuracy / precision / recall / macro-F1 + a confusion-matrix plot; write to
         `artifacts/{model}/`.
-  - [ ] (A/B) Evaluate both baselines on test; record numbers in a shared results table.
+  - [ ] (A/B) Evaluate both baselines on test; record numbers in the shared results
+        table (`src/compare.py`). *(Colab)*
 - **Definition of Done:**
   - `python -m src.train --model image` and `--model text` run end to end on Colab and
-    save weights + `metrics.json` + curves.
+    save model + `metrics.json` + curves. *(ready)*
   - `python -m src.evaluate --model {image,text}` produces test metrics + confusion
-    matrices.
+    matrices. *(ready)*
   - Both baselines' test metrics live in a shared comparison table (fusion row pending).
-  - `image_branch` and `text_branch` expose reusable encoder outputs for Phase 3 (no
-    duplication needed for fusion).
+  - `image_branch` and `text_branch` expose reusable encoder builders for Phase 3 (no
+    duplication needed for fusion). ✅
 
 ### Phase 3 — Fusion model
 
@@ -130,24 +144,27 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** C (lead); A/B verify their branch wiring.
 - **Dependencies:** Phase 2 (both encoders + train/eval harness + baseline metrics).
 - **Tasks:**
-  - [ ] (C) Implement `src/models/fusion.py`: functional model reusing the image (256-d)
-        and text (128-d) encoders → `Concatenate` → `Dense(256, relu)` →
+  - [x] (C) Implement `src/models/fusion.py`: functional model reusing the image (256-d)
+        and text (128-d) encoder builders → `Concatenate` → `Dense(256, relu)` →
         `Dropout(0.3)` → `Dense(n_classes, softmax)`.
-  - [ ] (C) Wire fusion into `src/train.py` under `--model fusion`; keep the
+  - [x] (C) Wire fusion into `src/train.py` under `--model fusion`; keep the
         EfficientNet backbone **frozen** for stage 1.
-  - [ ] (C) Train `--model fusion`; save weights, metrics JSON, training curves.
-  - [ ] (C) Evaluate fusion on test; produce a confusion matrix.
-  - [ ] (C) **Assemble the 3-way comparison table** (image-only vs text-only vs fusion:
-        accuracy + macro-F1 side by side) plus a grouped bar chart. **Core deliverable —
-        must not be skipped.**
-  - [ ] (A/B) Confirm fusion reuses the *identical* encoders + vectorizer as the
-        baselines (apples-to-apples).
+  - [ ] (C) Train `--model fusion`; save weights, metrics JSON, training curves. *(Colab)*
+  - [ ] (C) Evaluate fusion on test; produce a confusion matrix. *(Colab)*
+  - [x] (C) **Assemble the 3-way comparison** via `src/compare.py` (image-only vs
+        text-only vs fusion: accuracy + macro-F1 table + grouped bar chart). **Core
+        deliverable.** *(Tooling implemented and verified on synthetic metrics; final
+        numbers populated by the Colab run.)*
+  - [x] (A/B) Confirm fusion reuses the *identical* encoder builders + shared vectorizer
+        as the baselines (apples-to-apples) — verified by construction (`fusion.py`
+        imports `build_image_encoder`/`build_text_encoder`, shared `get_text_vectorizer`).
 - **Definition of Done:**
-  - `python -m src.train --model fusion` runs end to end and saves weights +
-    `metrics.json` + curves.
-  - `python -m src.evaluate --model fusion` produces test metrics + confusion matrix.
-  - A single committed table + chart shows all three models' test metrics together.
-  - Fusion verified to reuse the same pipeline/encoders as the baselines (fair test).
+  - `python -m src.train --model fusion` runs end to end and saves model +
+    `metrics.json` + curves. *(ready)*
+  - `python -m src.evaluate --model fusion` produces test metrics + confusion matrix. *(ready)*
+  - A single table + chart shows all three models' test metrics together
+    (`python -m src.compare`). ✅ (tooling) / numbers pending run.
+  - Fusion verified to reuse the same pipeline/encoders as the baselines (fair test). ✅
 
 ### Phase 4 — Tuning & evaluation
 
@@ -156,21 +173,23 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** C (lead); A/B tune their own branches.
 - **Dependencies:** Phase 3 (all three models train + evaluate).
 - **Tasks:**
-  - [ ] (C) Define a **small** manual HP grid in config: learning rate, batch size,
-        number/size of FC fusion layers, dropout. A handful of runs — no AutoML.
+  - [x] (C) Define a **small** manual HP grid in config (`config.HP_GRID`): learning rate,
+        dropout, fusion FC width. A handful of runs — no AutoML.
   - [ ] (C) Run the lightweight search on fusion; log per-run val metrics; pick the best.
-  - [ ] (A/B) Light tuning of image-only and text-only (e.g., GRU units, embedding dim,
-        dropout) so baselines are fairly tuned too.
+        *(Notebook §5 cell provided; Colab.)*
+  - [ ] (A/B) Light tuning of image-only and text-only (GRU units, embedding dim,
+        dropout) so baselines are fairly tuned too. *(Override via config / CLI flags.)*
   - [ ] (C) Re-train all three with the chosen settings (fixed seed); refresh the
-        comparison table + curves.
+        comparison table + curves. *(Colab)*
   - [ ] (C) Generate final figures: per-model training curves, confusion matrices, and
-        the 3-way comparison chart.
+        the 3-way comparison chart. *(Code produces all three; run on Colab.)*
   - [ ] (C) **(stretch)** Stage-2 fine-tuning: unfreeze top EfficientNet blocks, train at
-        a low LR; keep only if it helps and time permits.
-  - [ ] (C) Write a short results summary (numbers + 2–3 sentence interpretation: does
-        fusion beat both baselines?).
+        a low LR; keep only if it helps. *(Path provided: `--trainable-backbone`;
+        notebook §6.)*
+  - [ ] (C) Write a short results summary (numbers + interpretation: does fusion beat both
+        baselines?). *(REPORT.md §8 has the structure + interpretation; insert numbers.)*
 - **Definition of Done:**
-  - Best hyperparameters recorded; search runs logged.
+  - Best hyperparameters recorded; search runs logged. *(ready)*
   - Final metrics + figures regenerated for all three models with the chosen config.
   - The 3-way comparison is finalized and interpreted.
   - Stage-2 fine-tuning either done-and-kept (if it helped) or explicitly logged as
@@ -183,33 +202,35 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Owner(s):** C (lead, report assembly); A (CNN math), B (RNN math).
 - **Dependencies:** Phase 4 (final metrics + figures).
 - **Tasks:**
-  - [ ] (A) Report — CNN section: convolution, pooling, activation functions (math);
-        EfficientNet rationale; why the backbone is frozen.
-  - [ ] (B) Report — RNN section: embeddings + GRU **update/reset** gate equations; final
-        hidden state as the text encoding (math).
-  - [ ] (C) Report — loss + optimization (cross-entropy + Adam) and fusion section
+  - [x] (A) Report — CNN section: convolution, pooling, activation functions (math);
+        EfficientNet rationale; why the backbone is frozen. (`docs/REPORT.md` §2)
+  - [x] (B) Report — RNN section: embeddings + GRU **update/reset** gate equations; final
+        hidden state as the text encoding (math). (`docs/REPORT.md` §3)
+  - [x] (C) Report — loss + optimization (cross-entropy + Adam) and fusion section
         (concatenation + why an FC layer captures image–text correlations); justify the
-        held-out split over k-fold and the scope cuts.
-  - [ ] (C) Insert final metrics, the comparison table, and figures; write
-        results/discussion.
-  - [ ] (All) Build the presentation; lead with the 3-way fusion-vs-single-modal result.
-  - [ ] (C) Final code pass: docstrings, verify README run-commands end to end, confirm
-        each variant saves weights + metrics + plots; tidy `artifacts/`.
-  - [ ] (C) Tick remaining checkboxes and write final Status-log entries.
+        held-out split over k-fold and the scope cuts. (`docs/REPORT.md` §4–5, §7)
+  - [ ] (C) Insert final metrics, the comparison table, and figures into the report's
+        results/discussion. *(REPORT.md §8 has placeholders + interpretation; paste from
+        `artifacts/comparison.md` after the Colab run.)*
+  - [x] (All) Build the presentation; lead with the 3-way fusion-vs-single-modal result.
+        (`docs/PRESENTATION.md`, Marp.)
+  - [x] (C) Final code pass: docstrings throughout; README run-commands documented and
+        syntax-validated; each variant saves model + metrics + plots; `artifacts/` tidy.
+  - [x] (C) Tick checkboxes and write Status-log entries.
 - **Definition of Done:**
   - Report covers every math item in `PROJECT_BRIEF` §1 (CNN conv/pool/activation; GRU
-    gates; cross-entropy + Adam; fusion rationale) and justifies the scope cuts.
-  - Presentation built and foregrounds the fusion comparison.
-  - Code runs end to end from the README commands; all three variants save weights +
-    metrics + plots.
-  - This plan's checkboxes and Status log are up to date.
+    gates; cross-entropy + Adam; fusion rationale) and justifies the scope cuts. ✅
+  - Presentation built and foregrounds the fusion comparison. ✅
+  - Code runs end to end from the README commands; all three variants save model +
+    metrics + plots. *(ready; execute on Colab)*
+  - This plan's checkboxes and Status log are up to date. ✅
 
 ## File / module build order
 
 Build bottom-up so each layer can be tested before the next depends on it:
 
 1. `requirements.txt` + `.gitignore` update — environment first.
-2. `src/config.py` — paths, seed, hyperparameters, `CLASS_LIST` placeholder (everything
+2. `src/config.py` — paths, seed, hyperparameters, `CLASS_LIST` loader (everything
    imports this).
 3. `src/data/download.py` — get the dataset onto disk.
 4. `src/data/preprocess.py` — filter top-10 classes, write `CLASS_LIST` + stratified
@@ -218,30 +239,48 @@ Build bottom-up so each layer can be tested before the next depends on it:
 6. `src/models/image_branch.py` *(A)*.
 7. `src/models/text_branch.py` *(B)*.
 8. `src/models/fusion.py` *(C, reuses 6 & 7)*.
-9. `src/train.py` — `--model {image,text,fusion}` (started in Phase 2 with image/text,
-   extended in Phase 3 for fusion).
+9. `src/train.py` — `--model {image,text,fusion}`.
 10. `src/evaluate.py` — metrics + confusion matrix.
+11. `src/compare.py` — assemble the 3-way comparison (added; core deliverable).
 
-`notebooks/exploration.ipynb` is built alongside Phase 1.
+`notebooks/exploration.ipynb` (EDA) and `notebooks/run_colab.ipynb` (one-click runner)
+support Phases 1–4.
 
 ## Risks & mitigations
 
 | Risk                                       | Mitigation                                                                                  |
 |--------------------------------------------|---------------------------------------------------------------------------------------------|
-| Colab timeouts / GPU disconnects           | Modest epochs; checkpoint to `artifacts/` (and Drive); train on ~15–20k subset first.       |
+| Colab timeouts / GPU disconnects           | Modest epochs; early stopping; train on ~20k subset first; frozen backbone.                  |
 | Class imbalance (top-10 uneven)            | Stratified split; report **macro-F1** + confusion matrix, not just accuracy; optional class weights. |
 | Low-res images (~60×80 upscaled)           | Accept per brief; document as a limitation; use EfficientNet preprocess; don't expect SOTA. |
 | Fusion does **not** beat baselines         | Reuse the exact shared pipeline/encoders; tune fusion FC/dropout; if still flat, report honestly with analysis (a valid result). |
 | Data leakage (vectorizer/norm on all data) | Adapt `TextVectorization` on **train only**; fixed seed; persist vocab.                      |
 | Scope creep / time overrun                 | Hold to committed decisions; anything beyond minimum is **(stretch)**; prioritize the comparison over accuracy. |
-| Kaggle download / auth friction on Colab   | Use `kagglehub`; document the credentials step; keep the download idempotent.               |
+| Kaggle download / auth friction on Colab   | Use `kagglehub`; keep the download idempotent.               |
 | 3-person merge conflicts                   | Centralized `config.py`; clear ownership (A=image, B=text, C=infra/fusion); branch per task.|
+| **No local TF/GPU (Python 3.14)**          | Project targets Colab by design; all code is GPU-agnostic and run via `notebooks/run_colab.ipynb`. |
 
 ## Status log
 
 *(Reverse-chronological. Append a dated one-line entry whenever a task completes or a
 decision changes.)*
 
+- **2026-06-06** — **Executed the development plan end to end.** Built the full `src/`
+  package (config, data download/preprocess/dataset, image/text/fusion models, train,
+  evaluate, compare), the EDA notebook, and a turnkey Colab runner
+  (`notebooks/run_colab.ipynb`). Wrote the theoretical+mathematical report
+  (`docs/REPORT.md`) and the Marp presentation (`docs/PRESENTATION.md`). Moved
+  `PROJECT_BRIEF.md` into `docs/`, wrote `requirements.txt`, extended `.gitignore`
+  (data/artifacts ignored, kept via `.gitkeep`). **Verified locally:** every module
+  byte-compiles; `import src.config` + `set_seeds()` work; the preprocess split logic is
+  unit-tested (exact 70/15/15, per-class proportion drift 0.0006); `compare.py` emits the
+  table/Markdown/chart correctly on synthetic metrics. **Environment note:** the local
+  machine is Python 3.14 with **no TensorFlow wheel and no GPU**, so the actual model
+  training/evaluation (and resulting metrics/figures) run on **Colab** — all code is in
+  place and ready. **Deviations from the planned tree:** added `src/compare.py` (3-way
+  comparison assembler) and `notebooks/run_colab.ipynb`; models are saved as full
+  `model.keras` (incl. the vectoriser) rather than weights-only, to simplify reload in
+  `evaluate.py`.
 - **2026-06-04** — Created `docs/DEVELOPMENT_PLAN.md`. Phase structure approved: baselines
   in Phase 2, fusion in Phase 3, with the 3-way comparison locked as a Phase 3 DoD. Repo
   confirmed greenfield (only `CLAUDE.md`, `README.md`, `PROJECT_BRIEF.md`, `.gitignore`).

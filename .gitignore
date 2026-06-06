@@ -1,3 +1,15 @@
+# --- Project-specific (multi-modal fashion classifier) ---
+# Downloaded dataset (Kaggle small ~600 MB) — never commit, but keep the dir.
+data/*
+!data/.gitkeep
+# Training outputs: weights, metrics, plots, saved vectorizer — keep the dir.
+artifacts/*
+!artifacts/.gitkeep
+# Saved Keras models / weights anywhere in the tree.
+*.keras
+*.h5
+*.hdf5
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

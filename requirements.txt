@@ -1,0 +1,19 @@
+# Multi-modal fashion classifier — dependencies.
+#
+# Targeted at Google Colab (free GPU), which already ships a recent TensorFlow.
+# Pins are deliberately loose / lower-bound only so the project installs cleanly on
+# Colab without fighting its pre-installed stack. On a clean machine, install with:
+#
+#     pip install -r requirements.txt
+#
+# NOTE: TensorFlow currently has no wheels for Python 3.14. Use Python 3.10–3.12
+# (Colab uses a compatible version), otherwise the install will fail.
+
+tensorflow>=2.15        # Keras functional API, tf.data, EfficientNetB0, TextVectorization
+pandas>=2.0             # styles.csv handling + split manifests
+numpy>=1.24             # numerics
+scikit-learn>=1.3       # stratified split + precision/recall/F1/confusion matrix
+matplotlib>=3.7         # training curves, confusion matrices, comparison chart
+seaborn>=0.12           # nicer confusion-matrix heatmaps
+kagglehub>=0.3          # one-line dataset download
+pillow>=9.5             # image decoding sanity checks in EDA
