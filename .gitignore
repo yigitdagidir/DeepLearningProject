@@ -10,6 +10,10 @@ artifacts/*
 *.h5
 *.hdf5
 
+# Node toolchain for rendering the report/slides to PDF (see package.json).
+node_modules/
+npm-debug.log*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

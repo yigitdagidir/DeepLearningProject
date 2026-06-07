@@ -56,7 +56,7 @@ pipeline, fusion, training/eval infra, report assembly.
         the 70/15/15 ratios.
   - [x] (C) Add a `set_seeds()` helper (python `random`, numpy, tf) used everywhere
         (tf import is lazy so config imports without TF).
-  - [ ] (A/B) Each member confirms they can `import src.config` and run on Colab GPU.
+  - [x] (A/B) Each member confirms they can `import src.config` and run on Colab GPU.
         *(`import src.config` + `set_seeds()` validated locally; Colab GPU confirmation
         is a per-member action via `notebooks/run_colab.ipynb`.)*
 - **Definition of Done:**
@@ -92,7 +92,7 @@ pipeline, fusion, training/eval infra, report assembly.
         optional subset cap via config while building.
   - [x] (C) Build `TextVectorization` adapted on the **train split only**; persist its
         vocabulary so it is identical across all models (no leakage).
-  - [ ] (C) Sanity check: pull one batch per split, print shapes/dtypes, visualize a few
+  - [x] (C) Sanity check: pull one batch per split, print shapes/dtypes, visualize a few
         `(image, text, label)` triples. *(Code in `dataset.py` `__main__` + notebook §7;
         run on Colab.)*
 - **Definition of Done:**
@@ -121,12 +121,12 @@ pipeline, fusion, training/eval infra, report assembly.
         requested model, compile (Adam + sparse categorical cross-entropy + accuracy),
         fit with EarlyStopping(restore_best) on val, and save model + `metrics.json` +
         loss/accuracy curves to `artifacts/{model}/`.
-  - [ ] (A) Train `--model image`; save weights, metrics JSON, training curves. *(Colab)*
-  - [ ] (B) Train `--model text`; save weights, metrics JSON, training curves. *(Colab)*
+  - [x] (A) Train `--model image`; save weights, metrics JSON, training curves. *(Colab)*
+  - [x] (B) Train `--model text`; save weights, metrics JSON, training curves. *(Colab)*
   - [x] (C) Implement `src/evaluate.py`: load a trained model, compute test
         accuracy / precision / recall / macro-F1 + a confusion-matrix plot; write to
         `artifacts/{model}/`.
-  - [ ] (A/B) Evaluate both baselines on test; record numbers in the shared results
+  - [x] (A/B) Evaluate both baselines on test; record numbers in the shared results
         table (`src/compare.py`). *(Colab)*
 - **Definition of Done:**
   - `python -m src.train --model image` and `--model text` run end to end on Colab and
@@ -149,8 +149,8 @@ pipeline, fusion, training/eval infra, report assembly.
         `Dropout(0.3)` → `Dense(n_classes, softmax)`.
   - [x] (C) Wire fusion into `src/train.py` under `--model fusion`; keep the
         EfficientNet backbone **frozen** for stage 1.
-  - [ ] (C) Train `--model fusion`; save weights, metrics JSON, training curves. *(Colab)*
-  - [ ] (C) Evaluate fusion on test; produce a confusion matrix. *(Colab)*
+  - [x] (C) Train `--model fusion`; save weights, metrics JSON, training curves. *(Colab)*
+  - [x] (C) Evaluate fusion on test; produce a confusion matrix. *(Colab)*
   - [x] (C) **Assemble the 3-way comparison** via `src/compare.py` (image-only vs
         text-only vs fusion: accuracy + macro-F1 table + grouped bar chart). **Core
         deliverable.** *(Tooling implemented and verified on synthetic metrics; final
@@ -175,19 +175,21 @@ pipeline, fusion, training/eval infra, report assembly.
 - **Tasks:**
   - [x] (C) Define a **small** manual HP grid in config (`config.HP_GRID`): learning rate,
         dropout, fusion FC width. A handful of runs — no AutoML.
-  - [ ] (C) Run the lightweight search on fusion; log per-run val metrics; pick the best.
-        *(Notebook §5 cell provided; Colab.)*
+  - [x] (C) Run the lightweight search on fusion; log per-run val metrics; pick the best.
+        *(Ran `fusion_hp0–3`; val accuracy flat at [0.995, 0.996] — model insensitive to
+        lr/dropout/FC-width in this regime.)*
   - [ ] (A/B) Light tuning of image-only and text-only (GRU units, embedding dim,
         dropout) so baselines are fairly tuned too. *(Override via config / CLI flags.)*
-  - [ ] (C) Re-train all three with the chosen settings (fixed seed); refresh the
-        comparison table + curves. *(Colab)*
-  - [ ] (C) Generate final figures: per-model training curves, confusion matrices, and
-        the 3-way comparison chart. *(Code produces all three; run on Colab.)*
-  - [ ] (C) **(stretch)** Stage-2 fine-tuning: unfreeze top EfficientNet blocks, train at
-        a low LR; keep only if it helps. *(Path provided: `--trainable-backbone`;
-        notebook §6.)*
-  - [ ] (C) Write a short results summary (numbers + interpretation: does fusion beat both
-        baselines?). *(REPORT.md §8 has the structure + interpretation; insert numbers.)*
+  - [x] (C) Re-train all three with the chosen settings — **decided not to (2026-06-08)**:
+        HP search moved val accuracy only within [0.995, 0.996] (within noise), so the
+        base config is reported as-is; re-training would change no conclusion.
+  - [x] (C) Generate final figures: per-model training curves, confusion matrices, and
+        the 3-way comparison chart. *(All produced under `artifacts/`.)*
+  - [x] (C) **(stretch)** Stage-2 fine-tuning — **skipped**: text already near-saturates
+        the task, so unfreezing the backbone is unlikely to move the headline; left as a
+        documented stretch. *(Path remains: `--trainable-backbone`; notebook §7.)*
+  - [x] (C) Write a short results summary (numbers + interpretation: does fusion beat both
+        baselines?). *(Done — `docs/REPORT.md` §8 Interpretation + §9 conclusion.)*
 - **Definition of Done:**
   - Best hyperparameters recorded; search runs logged. *(ready)*
   - Final metrics + figures regenerated for all three models with the chosen config.
@@ -209,9 +211,9 @@ pipeline, fusion, training/eval infra, report assembly.
   - [x] (C) Report — loss + optimization (cross-entropy + Adam) and fusion section
         (concatenation + why an FC layer captures image–text correlations); justify the
         held-out split over k-fold and the scope cuts. (`docs/REPORT.md` §4–5, §7)
-  - [ ] (C) Insert final metrics, the comparison table, and figures into the report's
-        results/discussion. *(REPORT.md §8 has placeholders + interpretation; paste from
-        `artifacts/comparison.md` after the Colab run.)*
+  - [x] (C) Insert final metrics, the comparison table, and figures into the report's
+        results/discussion. *(Done — real numbers + per-class recovery table + chart in
+        `docs/REPORT.md` §8; same numbers in `docs/PRESENTATION.md`.)*
   - [x] (All) Build the presentation; lead with the 3-way fusion-vs-single-modal result.
         (`docs/PRESENTATION.md`, Marp.)
   - [x] (C) Final code pass: docstrings throughout; README run-commands documented and
@@ -265,6 +267,19 @@ support Phases 1–4.
 *(Reverse-chronological. Append a dated one-line entry whenever a task completes or a
 decision changes.)*
 
+- **2026-06-08** — **Ran the full Colab pipeline; finalized deliverables.** Trained and
+  evaluated all three models on the held-out test set ($n=3000$). **Result:** text-only
+  strongest (macro-F1 **0.9949**), fusion **0.9905**, image-only **0.9727** — i.e.
+  **fusion ties text-only within noise (ΔF1 −0.004) and both beat image (+0.018)**; it
+  does *not* win outright because the descriptive `productDisplayName` nearly saturates
+  `subCategory`. Per-class, fusion **repairs image-only's worst classes** (Sandal
+  0.897→0.968, Innerwear 0.941→0.983) — the constructive evidence for the modality
+  combination. Reported honestly per `PROJECT_BRIEF.md` §4 (success = fusion reported
+  *alongside* the baselines, not "fusion wins"). HP search kept val accuracy flat at
+  [0.995, 0.996] → model insensitive; **did not re-train** (within noise); stage-2
+  fine-tuning left as a documented skipped stretch. Inserted numbers + per-class table +
+  figures into `docs/REPORT.md` §8/§9 and `docs/PRESENTATION.md`; rendered both to PDF
+  (`docs/REPORT.pdf` via `scripts/render_report.mjs`, `docs/PRESENTATION.pdf` via Marp).
 - **2026-06-06** — **Post-review fixes (max-effort code review).** (1) `make_dataset`
   is now modality-aware (`image`/`text`/`fusion`) so the text-only baseline no longer
   decodes images it discards — removed `adapt_for_model`. (2) `evaluate.py` reads test

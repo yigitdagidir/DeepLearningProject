@@ -55,6 +55,22 @@ python -m src.compare              # -> artifacts/comparison.{csv,md,png}
 We train all three variants on purpose: the comparison between single-modal baselines and
 the fusion model is the core result. Outputs land in `artifacts/<model>/`.
 
+## Building the deliverable PDFs
+
+The report and slides render to PDF with Node — no LaTeX install needed (the math is
+rendered by KaTeX, the slides by Marp):
+
+```bash
+npm install            # one-time: marp-cli, markdown-it, katex, puppeteer
+npm run render         # -> docs/REPORT.pdf and docs/PRESENTATION.pdf
+# or individually:
+npm run render:slides  # docs/PRESENTATION.pdf  (Marp)
+npm run render:report  # docs/REPORT.pdf        (scripts/render_report.mjs)
+```
+
+Run the Colab pipeline (or the CLI above) first so `artifacts/` holds the figures the
+report and slides embed.
+
 ## Repository layout
 
 See [`CLAUDE.md`](./CLAUDE.md) for the full structure and design decisions, and
@@ -72,7 +88,8 @@ The phase-by-phase task plan lives in [`docs/DEVELOPMENT_PLAN.md`](./docs/DEVELO
 ## Deliverables
 
 1. **Theoretical + mathematical report** — [`docs/REPORT.md`](./docs/REPORT.md)
-   (CNN conv/pool/activation, GRU gate equations, cross-entropy + Adam, fusion rationale)
+   → renders to `docs/REPORT.pdf` (CNN conv/pool/activation, GRU gate equations,
+   cross-entropy + Adam, fusion rationale, and the three-way results)
 2. **Documented source code** — the `src/` package + notebooks
 3. **Final presentation** — [`docs/PRESENTATION.md`](./docs/PRESENTATION.md)
-   (Marp slides; render with `npx @marp-team/marp-cli docs/PRESENTATION.md --pdf`)
+   → renders to `docs/PRESENTATION.pdf` (Marp slides; `npm run render:slides`)

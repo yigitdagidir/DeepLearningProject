@@ -20,7 +20,7 @@ Slides are separated by `---`. Speaker notes are in HTML comments like this one.
 Deep Learning course project
 
 <!-- One-liner: we combine a picture and a text description to classify a product,
-and we prove that using both beats using either one alone. -->
+and we test whether using both beats either one alone — and analyse when it helps. -->
 
 ---
 
@@ -128,27 +128,33 @@ All hyperparameters centralised in `src/config.py`.
 
 ## Results — the 3-way comparison
 
-*(Paste from `artifacts/comparison.md` after running `notebooks/run_colab.ipynb`.)*
-
 | model | accuracy | macro-F1 |
 |---|---|---|
-| Image-only | _…_ | _…_ |
-| Text-only | _…_ | _…_ |
-| **Fusion** | **_…_** | **_…_** |
+| Image-only | 0.9827 | 0.9727 |
+| **Text-only** | **0.9970** | **0.9949** |
+| Fusion | 0.9947 | 0.9905 |
 
-![w:560](../artifacts/comparison.png)
+**Headline:** text **saturates** the task → fusion **ties** the best modality
+(ΔF1 −0.004, within noise) and both **beat image-only** (+0.018).
 
-**Headline:** fusion's macro-F1 vs. the best single modality → _+Δ_
+---
+
+## Results — visualised
+
+![w:760](../artifacts/comparison.png)
+
+Accuracy and macro-F1 are visually indistinguishable for text and fusion; image-only
+trails on both — fusion **matches** the dominant modality rather than beating it.
 
 ---
 
 ## What the confusion matrices show
 
 - Per-model `confusion_matrix.png` saved in `artifacts/<model>/`
-- Expect fusion to move **off-diagonal mass onto the diagonal** for classes where
-  one modality is weak:
-  - 🖼️ image confuses *Shoes ↔ Sandal* (low-res)
-  - 📝 text resolves them via the product name
+- Fusion **repairs the image branch's worst confusions** by leaning on text:
+  - 🖼️ image-only struggles on *Sandal* (F1 0.897, confused with *Shoes*) and *Innerwear* (0.941)
+  - 🔗 fusion lifts them to **0.968** and **0.983**
+- 📝 text-only is already near-perfect → fusion's gains show up **per-class**, not in the average
 - We report **macro-F1** because the top-10 classes are imbalanced
 
 ---
@@ -171,6 +177,7 @@ All hyperparameters centralised in `src/config.py`.
 - Derived the **math** of every component (conv/pool/activation, GRU gates, cross-entropy + Adam, fusion)
 - **Fair** comparison: identical pipeline, shared encoders, no leakage
 - **Reproducible**: fixed seed, persisted vocab, one-click Colab notebook
-- Central result: **multi-modal fusion vs. single-modal baselines**
+- Central result: text **saturates** this task → fusion **ties** it and both **beat image**;
+  fusion's gains are **per-class** (recovers image's hardest categories)
 
 ### Thank you — questions?
