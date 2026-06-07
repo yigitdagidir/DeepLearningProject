@@ -16,7 +16,7 @@ Slides are separated by `---`. Speaker notes are in HTML comments like this one.
 
 ### Image + Text → product category
 
-**Team:** A (image/CNN) · B (text/RNN) · C (data, fusion, infra)
+**Team:** Yiğit Dağıdır · İlayda Baburoğlu · Sevil Begüm Gürcan
 Deep Learning course project
 
 <!-- One-liner: we combine a picture and a text description to classify a product,

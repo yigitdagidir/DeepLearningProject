@@ -1,7 +1,7 @@
 # Multi-Modal Deep Learning for Fashion Product Classification
 ### Theoretical & Mathematical Report
 
-**Course:** Deep Learning · **Team:** Person A (image/CNN), Person B (text/RNN), Person C (data, fusion, infrastructure)
+**Course:** Deep Learning · **Team:** Yiğit Dağıdır, İlayda Baburoğlu, Sevil Begüm Gürcan
 
 ---
 

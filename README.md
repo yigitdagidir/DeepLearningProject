@@ -81,9 +81,9 @@ The phase-by-phase task plan lives in [`docs/DEVELOPMENT_PLAN.md`](./docs/DEVELO
 
 3-person group:
 
-- **Person A** — image / CNN branch
-- **Person B** — text / RNN branch
-- **Person C** — data pipeline, fusion, training & evaluation infrastructure
+- **Yiğit Dağıdır**
+- **İlayda Baburoğlu**
+- **Sevil Begüm Gürcan**
 
 ## Deliverables
 
