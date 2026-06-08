@@ -267,6 +267,16 @@ support Phases 1–4.
 *(Reverse-chronological. Append a dated one-line entry whenever a task completes or a
 decision changes.)*
 
+- **2026-06-08** — **Packaged the final submission bundle.** Added a third documented-code
+  deliverable: `docs/SOURCE_CODE.md`/`.pdf` (annotated `src/` tree + one-paragraph-per-file
+  walkthrough, mapped to the A/B/C roles). Generalized `scripts/render_report.mjs` to accept
+  a Markdown path argument (defaults to `REPORT.md`) and added an `npm run render:source`
+  script; `npm run render` now builds all three PDFs. Bundled every deliverable — the three
+  PDFs (+ source Markdown), full `src/`, both notebooks, `README`, `requirements.txt`,
+  `PROJECT_BRIEF`, this plan, and all `artifacts/` figures/tables — into
+  `dist/MultiModal-Fashion-Classifier_Submission.zip` (34 files; excludes the JS toolchain,
+  `node_modules/`, `data/`, `__pycache__`, and `CLAUDE.md`). Did **not** re-render
+  REPORT/PRESENTATION (already current) and did **not** push.
 - **2026-06-08** — **Ran the full Colab pipeline; finalized deliverables.** Trained and
   evaluated all three models on the held-out test set ($n=3000$). **Result:** text-only
   strongest (macro-F1 **0.9949**), fusion **0.9905**, image-only **0.9727** — i.e.

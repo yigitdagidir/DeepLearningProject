@@ -1,11 +1,13 @@
-// Render docs/REPORT.md (Markdown + LaTeX math) to docs/REPORT.pdf.
+// Render a Markdown doc (Markdown + LaTeX math) under docs/ to a sibling PDF.
 //
 // pandoc/LaTeX are not assumed to be installed; this uses only Node packages:
 //   markdown-it (Markdown)  +  markdown-it-texmath/KaTeX (math)  +  puppeteer (PDF).
 // KaTeX CSS is inlined and images are resolved relative to the repo root, so the
 // comparison chart and confusion matrices embed correctly.
 //
-// Usage:  npm install  &&  node scripts/render_report.mjs
+// Usage:  npm install  &&  node scripts/render_report.mjs [docs/FILE.md]
+//   Defaults to docs/REPORT.md. The output PDF takes the same basename, e.g.
+//   `node scripts/render_report.mjs docs/SOURCE_CODE.md` -> docs/SOURCE_CODE.pdf.
 
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath, pathToFileURL } from 'node:url';
@@ -17,8 +19,12 @@ import puppeteer from 'puppeteer';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
-const inPath = resolve(repoRoot, 'docs', 'REPORT.md');
-const outPath = resolve(repoRoot, 'docs', 'REPORT.pdf');
+
+// Optional CLI arg: a Markdown file (relative to repo root or absolute).
+// Defaults to docs/REPORT.md; the PDF is written next to it with a .pdf extension.
+const inArg = process.argv[2] ?? 'docs/REPORT.md';
+const inPath = resolve(repoRoot, inArg);
+const outPath = inPath.replace(/\.md$/i, '.pdf');
 
 // --- Markdown -> HTML, with KaTeX for $...$ and $$...$$ ----------------------
 const md = new MarkdownIt({ html: true, linkify: true, typographer: true }).use(

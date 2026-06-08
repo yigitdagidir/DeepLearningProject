@@ -7,7 +7,8 @@
   "scripts": {
     "render:slides": "marp docs/PRESENTATION.md -o docs/PRESENTATION.pdf --allow-local-files",
     "render:report": "node scripts/render_report.mjs",
-    "render": "npm run render:slides && npm run render:report"
+    "render:source": "node scripts/render_report.mjs docs/SOURCE_CODE.md",
+    "render": "npm run render:slides && npm run render:report && npm run render:source"
   },
   "devDependencies": {
     "@marp-team/marp-cli": "^3.4.0",
