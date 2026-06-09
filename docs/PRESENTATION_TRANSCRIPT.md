@@ -307,3 +307,56 @@ keep answers short and confident.*
 - **Q: Your images are 60×80 upscaled to 224 — isn't that a problem?** — Yes, it caps the visual branch's ceiling; we accept it as a course-project trade-off, and it's precisely why the image side has limited room to contribute.
 - **Q: On what kind of task would fusion clearly win?** — One where neither modality is individually decisive — harder labels like `articleType`, noisier or shorter text, or lower-quality images — there fusion would have real headroom to beat both.
 - **Q: Why trainable embeddings instead of GloVe or BERT?** — The descriptions are short and domain-specific, so a compact embedding learned end-to-end is lighter and sufficient; BERT would be overkill and far heavier to train.
+
+---
+
+## Rapid-fire project Q&A (full-sentence answers)
+
+*Simple, factual questions an examiner might fire off quickly, answered in complete sentences.*
+
+**Data & problem**
+
+- **Q: Which dataset did you use?** — We used the Kaggle *Fashion Product Images (small)* dataset, which conveniently ships each product's image, its category labels, and a short text field together in one place.
+- **Q: What exactly does the model predict?** — It predicts the product's `subCategory`, and we restricted the problem to the ten most frequent sub-categories so the task is balanced enough to compare the three models fairly.
+- **Q: What is the text input?** — The text modality is the `productDisplayName` field, which is the short product title such as "Nike Men Black Casual Shoes".
+- **Q: Why did you choose the top-10 `subCategory` as the label?** — `masterCategory` is almost perfectly solvable from the image alone so fusion would add nothing visible, and `articleType` has over 140 classes which is too hard to train fairly, so the top-10 `subCategory` is the sweet spot where the second modality can make a measurable difference.
+- **Q: How did you split the data?** — We used a stratified 70/15/15 train/validation/test split with a fixed seed, and all three models share exactly the same split so any difference comes from the model rather than the data.
+- **Q: How many test samples are there?** — The held-out test set contains 3,000 products that the models never see during training.
+- **Q: What image size do you feed the network?** — The images are resized to 224×224 pixels, upscaled from the dataset's small roughly 60×80 originals.
+
+**Image branch (CNN)**
+
+- **Q: Which CNN do you use, and is it trained?** — We use EfficientNetB0 with ImageNet weights as the backbone, and we keep it frozen so that only the small projection head on top is actually trained.
+- **Q: Why do you freeze the backbone?** — Freezing reuses strong general-purpose ImageNet features, which prevents overfitting on our modest dataset, makes training much cheaper, and keeps the BatchNorm layers stable in inference mode.
+- **Q: Why EfficientNetB0 specifically?** — It gives the best accuracy-per-computation thanks to compound scaling and is the smallest variant at around five million parameters, so it runs comfortably on a free Colab GPU.
+- **Q: What does the pooling step do?** — We use global average pooling, which averages each feature channel down to a single number and gives us a compact, fixed-length image vector with no extra parameters.
+
+**Text branch (RNN)**
+
+- **Q: Which RNN do you use, and how big is it?** — We use a GRU with 128 units, which reads the description one word at a time while keeping a running memory of what it has seen.
+- **Q: Why a GRU instead of an LSTM?** — A GRU has three gates instead of the LSTM's four, so it is lighter and faster to train, and that extra LSTM capacity is not needed for our short product names.
+- **Q: What kind of word embeddings did you use?** — We learn a trainable 128-dimensional embedding from scratch alongside the model, rather than loading pretrained GloVe or BERT vectors.
+- **Q: What are your vocabulary and sequence-length limits?** — We cap the vocabulary at 10,000 words and pad or truncate every description to a fixed length of 20 tokens.
+
+**Fusion**
+
+- **Q: How does your fusion actually work?** — We concatenate the 256-number image vector and the 128-number text vector into a single 384-number vector, then pass it through a dense layer with ReLU, a dropout of 0.3, and finally a softmax over the ten classes.
+- **Q: Is this early or late fusion, and why did you choose it?** — It is early, feature-level fusion because we combine the two learned feature vectors before the decision, and we chose it so the joint layer can learn cross-modal interactions that decision-level (late) fusion simply cannot capture.
+- **Q: Why does the fully-connected layer matter?** — Each neuron in that layer sees both modalities at once, so it can fire only when a visual feature and a textual feature occur together, which is exactly how the model learns image–text correlations and lets the text break ties when the image is ambiguous.
+- **Q: How many neurons are in the head?** — The fusion hidden layer has 256 neurons and the output layer has 10 (one per class), while the two encoders feeding it produce 256 image features and 128 text features.
+
+**Training & loss**
+
+- **Q: What loss function do you use?** — We use sparse categorical cross-entropy, which penalises the model whenever it assigns a low probability to the correct class.
+- **Q: Which optimizer did you use, and why that one?** — We use Adam with a learning rate of 0.001, because its per-parameter adaptive step sizes handle the very different gradient scales of a frozen CNN, an embedding, and a GRU without any manual per-layer tuning.
+- **Q: How do you regularize the model?** — We rely on a dropout of 0.3 on the fusion layer, early stopping on the validation loss, the frozen backbone as an implicit regulariser, and a vocabulary built only from the training split.
+- **Q: What batch size and how many epochs?** — We train with a batch size of 32 for up to 15 epochs, stopping early with a patience of 3 and restoring the best weights.
+
+**Evaluation & results**
+
+- **Q: Which metrics do you report, and why macro-F1?** — We report accuracy and macro-F1, and we emphasise macro-F1 because the ten classes are imbalanced and it weights every class equally instead of letting the large classes dominate the score.
+- **Q: What were your results?** — On the held-out test set the image-only model reached a macro-F1 of 0.9727, the text-only model 0.9949, and the fusion model 0.9905.
+- **Q: Did fusion beat the single-modality models?** — Fusion effectively ties the text-only model, with the gap well inside run-to-run noise, and it clearly beats the image-only model, because the very descriptive product names let text nearly saturate the task on its own.
+- **Q: So where does fusion actually help?** — Its benefit shows up at the per-class level, where it repairs the image branch's worst confusions — for example Sandal improves from 0.897 to 0.968 and Innerwear from 0.941 to 0.983.
+- **Q: Why didn't you use k-fold cross-validation?** — k-fold would cost several times the compute for a variance estimate we did not strictly need, so we used a single stratified held-out split as a deliberate and documented trade-off.
+- **Q: How did you prevent data leakage?** — The text vectorizer is adapted only on the training split and then persisted, and the split itself is fixed by the seed, so nothing from validation or test ever leaks into training.
