@@ -273,3 +273,37 @@ constructive benefit shows up per class, recovering the image branch's hardest c
 like Sandal and Innerwear.
 
 Thank you all very much for listening. We'd be happy to take any questions.
+
+---
+
+## Q&A Prep — likely questions & one-line answers
+
+*Not part of the timed talk. Whoever owns that part of the project takes the question;
+keep answers short and confident.*
+
+**Theory & maths**
+
+- **Q: Why a GRU instead of an LSTM — and what are the LSTM's gates?** — An LSTM keeps a separate cell state with three gates: an **input** gate (what new information to write), a **forget** gate (what to erase), and an **output** gate (what to expose as the hidden state); a GRU merges these into just an **update** and a **reset** gate with no separate cell, so it's lighter and faster — plenty for our short product names.
+- **Q: How does the GRU avoid the vanishing-gradient problem?** — When the update gate is near zero the hidden state is copied almost unchanged, giving an additive "carry" path so gradients survive across many steps instead of shrinking.
+- **Q: Why does a fully-connected layer over the concatenated features capture image–text correlations?** — Each hidden unit weighs evidence from both modalities, so after the ReLU it can fire only when a visual *and* a textual feature co-occur — a cross-modal conjunction that two separate classifiers can't represent.
+- **Q: What is the gradient of softmax + cross-entropy, and why does it matter?** — It reduces to "predicted minus true" (ŷ − y) at the logits — bounded and non-saturating, which keeps training stable.
+- **Q: Why Adam rather than plain SGD?** — Adam adapts a per-parameter step from the first and second gradient moments, handling the very different gradient scales of a frozen CNN, an embedding and a GRU without hand-tuning each layer.
+- **Q: Convolution gives equivariance but pooling gives invariance — what's the difference?** — Shifting the input shifts the convolution's feature map (equivariance); pooling then summarises a region so small shifts no longer change the output (invariance).
+- **Q: Why global average pooling instead of flatten-then-dense?** — GAP adds no parameters, resists overfitting, and is shift-robust, collapsing the feature map into a compact fixed-length vector.
+
+**Results & methodology**
+
+- **Q: Fusion didn't beat text-only — didn't the project fail?** — No: the goal was to test *whether* combining helps, and here text already saturates the task, so the fair result is that fusion ties the best modality, beats the weak one, and repairs the image branch's worst classes.
+- **Q: You ran a single seed — how can you call the −0.004 gap "noise"?** — We can't fully quantify variance from one run; we infer it from the hyperparameter grid, where validation accuracy moved only within 0.995–0.996, and confirming it with multiple seeds or cross-validation is the honest next step.
+- **Q: Why not use k-fold cross-validation?** — k-fold costs k× the compute for a variance estimate we didn't strictly need; a fixed stratified 70/15/15 split — validation to choose, test once — is the standard, compute-appropriate choice, documented as a deliberate trade-off.
+- **Q: Why report macro-F1 instead of accuracy?** — The ten classes are imbalanced, and macro-F1 weights every class equally, so strong performance on big classes can't mask weak minority classes.
+- **Q: Can fusion ever *hurt* performance?** — Yes — on already-easy classes the noisier image features can slightly dilute a near-perfect text signal (Fragrance dropped from 1.000 to 0.982), but the per-class repairs elsewhere offset it to an overall tie.
+- **Q: How did you prevent data leakage between splits?** — The text vectorizer is adapted on the training split only and then persisted, and the split is fixed by seed, so all three models share identical data with nothing leaking from validation or test.
+
+**Design choices & data**
+
+- **Q: Why freeze the backbone instead of fine-tuning it?** — Freezing prevents overfitting the ~5-million-parameter backbone on a small dataset, cuts training cost, and keeps BatchNorm stable; unfreezing the top blocks is our documented stretch goal and would most help the weak image branch.
+- **Q: Why EfficientNet-B0 rather than ResNet or VGG?** — B0 uses compound scaling for the best accuracy-per-FLOP and is the smallest variant (~5 million parameters), which comfortably fits the free Colab GPU.
+- **Q: Your images are 60×80 upscaled to 224 — isn't that a problem?** — Yes, it caps the visual branch's ceiling; we accept it as a course-project trade-off, and it's precisely why the image side has limited room to contribute.
+- **Q: On what kind of task would fusion clearly win?** — One where neither modality is individually decisive — harder labels like `articleType`, noisier or shorter text, or lower-quality images — there fusion would have real headroom to beat both.
+- **Q: Why trainable embeddings instead of GloVe or BERT?** — The descriptions are short and domain-specific, so a compact embedding learned end-to-end is lighter and sufficient; BERT would be overkill and far heavier to train.
